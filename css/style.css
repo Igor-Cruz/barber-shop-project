@@ -14,10 +14,15 @@ body{
 }
 
 
+/********
+* Home
+********/
+
 .home{
     background-image: url(../images/bg-home.jpg);
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
 
 .home .header {
@@ -37,7 +42,9 @@ body{
 .home .header .nav ul li {
     display: flex;
     align-items: center;
+    justify-content: center;                                                                
     margin:0 10px;
+    width:150px;
 }
 
 .home .header .nav ul li a{
@@ -56,4 +63,40 @@ body{
 
 .home .header .nav ul li .logo{
     margin: 0 30px;
+}
+
+/**************
+* Home - Banner
+**************/
+
+.home .banner{
+    color: white;
+    text-align: center;
+    text-align: center;
+    height: 274px;
+    width: 758px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -379px;
+    margin-top: -77px;
+}
+
+.home .banner span{
+    display: block;
+}
+
+.home .banner .slogan1{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.home .banner h1{
+    font-size: 120px;
+}
+
+.home .banner .slogan2{
+    margin: 15px;
 }
