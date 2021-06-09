@@ -13,6 +13,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
 
 /********
 * Home
@@ -72,7 +77,6 @@ body{
 .home .banner{
     color: white;
     text-align: center;
-    text-align: center;
     height: 274px;
     width: 758px;
     position: absolute;
@@ -99,4 +103,76 @@ body{
 
 .home .banner .slogan2{
     margin: 15px;
+}
+
+/******
+* About
+*******/
+
+.about{
+    height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+}
+
+.about .timing .overlay{
+    background: rgba(0, 0, 0,0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .icon-cut{
+    width: 50px;
+    
+}
+
+.about .timing h3{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content; /* O tamanho do h3 fica do tamanho do conteúdo, com isso ao inserir border-bottom a linha fica do mesmo tamanho do texto */
+    margin: 0 auto 30px auto;
+    font-size:30px;
+}
+
+.about .timing .text{
+    margin: 10px 0;
+}
+
+.about .timing .text:after{
+    content: '·';
+    color: white;
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after{
+    content: '|';
+    /* Reescreve o último item */
+}
+
+.about .timing .text h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span{
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience{
+    width: 66%;
 }
