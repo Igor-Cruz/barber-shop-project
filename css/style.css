@@ -110,7 +110,6 @@ body{
 *******/
 
 .about{
-    height: 100vh;
     background-color: var(--color-primary);
 }
 
@@ -119,6 +118,8 @@ body{
 }
 
 .about .timing{
+    position: relative;
+    top: -50px;
     width: 33%;
     padding: 20px;
     background-image: url(../images/brush-big.jpg);
@@ -175,4 +176,32 @@ body{
 
 .about .experience{
     width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.about .experience h2:after{
+    display: block;
+    content: ''; /* Obrigado está desse jeito vazio, se não o elemento não aparece */
+    width: 100px;
+    height: 3px;
+    background: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
 }
